@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Flight Delay Prediction</h1>
+        <h1>Flight Status Prediction</h1>
         <form action="/predict" method="post">
 
             <label for="route">Route:</label>
@@ -76,9 +76,12 @@
                 {%endfor%}
             </select>
             
+            <label for="day_of_month">Day:</label>
+            <input type="number" id="day_of_month" name="day_of_month" min="1" max="31" required>
+
             <label for="month">Month:</label>
             <input type="number" id="month" name="month" min="1" max="12" required>
-            
+
             <label for="day_of_week">Day of week:</label>
             <select id="day_of_week" name="day_of_week" required>
                 <option value="">Select a day</option>
