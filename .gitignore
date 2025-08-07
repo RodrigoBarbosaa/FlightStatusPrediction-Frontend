@@ -1,0 +1,9 @@
+# Ignorar arquivos temporários e de compilação
+__pycache__/
+
+# Ignorar o ambiente virtual
+venv/
+
+# Ignorar outros arquivos comuns de IDEs e sistemas operacionais
+.DS_Store
+.env
